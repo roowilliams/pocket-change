@@ -60,7 +60,6 @@ export default class PreviewCard extends Component {
             <Container width={width} height={height}>
                 <Header>
                     <Left>
-                        {/* <Text>{person.name}</Text> */}
                         <Name>{person.name}</Name>
                         <Status>{timeFrom(person.location.timestamp)}</Status>
                     </Left>

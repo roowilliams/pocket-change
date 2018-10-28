@@ -1,12 +1,12 @@
-import React from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
-import { AppLoading, Asset, Font, Icon } from 'expo';
-import AppNavigator from './navigation/AppNavigator';
+import React from 'react'
+import { Platform, StatusBar, StyleSheet, View } from 'react-native'
+import { AppLoading, Asset, Font, Icon } from 'expo'
+import AppNavigator from './navigation/AppNavigator'
 
 export default class App extends React.Component {
   state = {
     isLoadingComplete: false,
-  };
+  }
 
   render() {
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
@@ -36,6 +36,8 @@ export default class App extends React.Component {
       Font.loadAsync({
         // This is the font that we are using for our tab bar
         ...Icon.Ionicons.font,
+        'roboto-condensed-bold': require('./assets/fonts/RobotoCondensed-Bold.ttf'),
+        'cabin-regular': require('./assets/fonts/Cabin-Regular.ttf'),
       }),
     ]);
   };

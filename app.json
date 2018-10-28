@@ -1,11 +1,11 @@
 {
   "expo": {
     "name": "pocketchange",
-    "description": "This project is really great.",
+    "description": "An idea to help the homeless.",
     "slug": "pocketchange",
     "privacy": "public",
     "sdkVersion": "30.0.0",
-    "platforms": ["ios", "android"],
+    "platforms": ["ios"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,7 +21,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.lydandroo.pocketchange"
     }
   }
 }
