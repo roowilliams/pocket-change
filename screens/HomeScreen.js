@@ -177,7 +177,6 @@ export default class HomeScreen extends Component {
     }
 
     handleCardPress = id => {
-        console.log('card pressed', id)
         this.props.navigation.navigate('Details', { 'personID': id })
     }
 
