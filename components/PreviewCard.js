@@ -12,13 +12,12 @@ const Container = styled(Card)`
     flex: 1;
     width: ${props => props.width};
     height: ${props => props.height};
-
 `
 
 const Header = styled.View`
     justifyContent: space-between;
     flex-direction: row;
-
+    padding-horizontal: 20px;
 `
 
 const Left = styled.View`
@@ -38,7 +37,7 @@ const CharityIcon = styled.Image`
 `
 
 const Name = styled.Text`
-    font-size: 16px;
+    font-size: 22px;
 `
 
 const Status = styled.Text`
@@ -48,8 +47,9 @@ const Status = styled.Text`
 
 const Portrait = styled.Image`
     align-self: center;
-    height: 100px;
+    height: 80%;
     width: 100%;
+    resizeMode: cover;
 `
 
 export default class PreviewCard extends Component {

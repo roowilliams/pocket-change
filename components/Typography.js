@@ -1,10 +1,34 @@
 import React from 'react'
 import { Text } from 'react-native'
+import { human } from 'react-native-typography'
 import styled from 'styled-components'
 import Colors from '../constants/Colors'
 
 const headingFont = 'roboto-condensed-bold'
 const bodyFont = 'cabin-regular'
+
+export const Title1 = styled.Text`
+  ${human.title1Object};
+  line-height: ${human.title1Object.lineHeight * 1.25};
+  margin-top: ${human.title1Object.lineHeight * 0.50};
+`
+
+export const Title2 = styled.Text`
+  ${human.title2Object};
+  margin-top: ${human.title2Object.lineHeight * 0.35};
+`
+
+export const Title3 = styled.Text`
+  ${human.title3Object};
+  margin-top: ${human.title3Object.lineHeight * 0.35};
+`
+
+export const Body = styled.Text`
+  ${human.bodyObject};
+  line-height: ${human.bodyObject.lineHeight * 1.25};
+  margin-top: ${human.bodyObject.lineHeight * 0.35};
+`
+
 
 export const StyledText = styled(Text)`
     font-family: ${bodyFont};
@@ -29,13 +53,13 @@ export const SubHeading = styled(Text)`
     margin-bottom: 10px;
 `
 
-export const Body = styled(Text)`
-    font-family: ${bodyFont};
-    font-size: 18;
+// export const Body = styled(Text)`
+//     font-family: ${bodyFont};
+//     font-size: 18;
 
-    color: ${Colors.defaultText};
-    margin-bottom: 10px;
-`
+//     color: ${Colors.defaultText};
+//     margin-bottom: 10px;
+// `
 
 export const TouchableText = styled(Text)`
     font-family: ${bodyFont};

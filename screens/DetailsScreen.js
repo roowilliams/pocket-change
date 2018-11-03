@@ -5,7 +5,7 @@ import { timeFrom } from '../utils/helpers'
 import { markers } from '../utils/dummyData'
 
 import { Container, Content, FixedBottom } from '../components/Layout'
-import { Heading1, Heading2, SubHeading, Body, TouchableText } from '../components/Typography'
+import { Title1, Title2, SubHeading, Body, TouchableText } from '../components/Typography'
 import { PrimaryAction } from '../components/Buttons';
 
 
@@ -40,7 +40,7 @@ export default class DetailsScreen extends Component {
 		<Container>
 			<Content>
 				<View>
-				<Heading1>{person.name}</Heading1>
+				<Title1>{person.name}</Title1>
 				<SubHeading>Last seen: {timeFrom(person.location.timestamp)}</SubHeading>
 				</View>
 				<Image
@@ -50,7 +50,7 @@ export default class DetailsScreen extends Component {
 				<Summary id={person.id} name={person.name} showStory={this.showStory}>
 				{person.story.summary}
 				</Summary>
-				<Heading2>Goals</Heading2>
+				<Title2>Goals</Title2>
 				<Text>- Goal 1</Text>
 				<Text>- Goal 2</Text>
 				<Text>- Goal 3</Text>

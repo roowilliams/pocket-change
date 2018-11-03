@@ -22,7 +22,7 @@ export const markers = {
     },
     story: {
       summary: 'At a young age Houdini knew he wanted to be a magician, and he ran away from home by hopping a freight car, according to Appleton Public Library.',
-      expanded: 'At a young age Houdini knew he wanted to be a magician, and he ran away from home by hopping a freight car, according to Appleton Public Library. He ended up in Missouri. A few years later, he moved to New York City with his father, but they were so poor Houdini continued to panhandle on the streets. He began his professional career at 17.' 
+      expanded: 'At a young age Houdini knew he wanted to be a magician, and he ran away from home by hopping a freight car, according to Appleton Public Library. \nHe ended up in Missouri. A few years later, he moved to New York City with his father, but they were so poor Houdini continued to panhandle on the streets. He began his professional career at 17.' 
     }
   },
   '2': {

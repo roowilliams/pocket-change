@@ -12,7 +12,6 @@ export const Content = styled(View)`
     background-color: #ffffff;
 `
 export const Card = styled(View)`
-    padding-horizontal: 10;
     margin: 10px;
     border-radius: 3;
     background-color: #ffffff;

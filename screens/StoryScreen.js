@@ -4,7 +4,7 @@ import { StyleSheet, View, Image } from 'react-native'
 import { markers } from '../utils/dummyData'
 
 import { Container, Content, FixedBottom } from '../components/Layout'
-import { Heading1, SubHeading, Body } from '../components/Typography'
+import { Title1, SubHeading, Body } from '../components/Typography'
 import { PrimaryAction } from '../components/Buttons';
 
 
@@ -21,35 +21,26 @@ export default class StoryScreen extends Component {
             style={styles.image}
           />
           <View>
-            <Heading1>{person.name}'s Story</Heading1>
+            <Title1>{person.name}'s Story</Title1>
           </View>
           <View>
             <Body>{person.story.expanded}</Body>
           </View>
-          <FixedBottom>
-            <PrimaryAction>Donate to {person.name}</PrimaryAction>
-          </FixedBottom>
         </Content>
+        <FixedBottom>
+            <PrimaryAction>Donate to {person.name}</PrimaryAction>
+        </FixedBottom>
       </Container>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-  },
   image: {
     flex: 1,
     maxWidth: '100%',
     maxHeight: '40%',
     marginBottom: '6%'
   },
-  text: {
-    paddingHorizontal: '3%'
-  }
 })
 
